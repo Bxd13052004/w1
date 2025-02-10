@@ -8,12 +8,14 @@ let middleware = new MiddleWare()
 
 //test api
 api.get("/ping", (req, res) => {
+    console.log("----");
+
     res.cookie("ping", "ok", {
         httpOnly: true
     });
 
     res.status(200).json({
-        message: "ok from backend!"
+        message: "ok from waiter server!"
     });
 })
 
