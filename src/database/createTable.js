@@ -41,6 +41,29 @@ const main = async () => {
     //         console.log(e);
     //     })    //done
 
+    // await connection.excuteQuery(`
+    //              CREATE TABLE spamer (
+    //     spamerId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    //     userNameHaui VARCHAR(20) NOT NULL ,
+    //     passWordHaui VARCHAR(100) NOT NULL,
+    //     userId INT NOT NULL,
+    //     timeSpam INT NOT NULL DEFAULT 5,
+    //     moduleId VARCHAR(30),
+    //     prioOnline BOOLEAN,
+    //     prioTeacher TEXT CHARACTER SET utf8mb4 ,
+    //     avoidTeacher TEXT CHARACTER SET utf8mb4 ,
+    //     prioTime TEXT CHARACTER SET utf8mb4 ,
+    //     avoidTime TEXT CHARACTER SET utf8mb4 ,
+    //     note TEXT CHARACTER SET utf8mb4 
+    // ) DEFAULT CHARSET=utf8mb4;
+    //         `)
+    //     .then((res) => {
+    //         console.log(res);
+    //     })
+    //     .catch((e) => {
+    //         console.log(e);
+    //     })    //done
+
 
     // await connection.excuteQuery("create table transactionRegister  (id not null auto_increment primary key , userid int not null , nameHaui varchar(40) , studentCode varchar(20) , passWordHaui varchar(30) , classId int , timeAt varchar(30) ,  ) ")
     //     .then(() => {
@@ -72,16 +95,16 @@ const main = async () => {
     //     }) //done
 
 
-    await connection.excuteQuery(
-        `UPDATE user set balance = 0
-        WHERE userId = 14;`
-    )
-        .then((res) => {
-            console.log(res);
-        })
-        .catch((e) => {
-            console.log(e);
-        }) // done
+    // await connection.excuteQuery(
+    //     `UPDATE user set balance = 0
+    //     WHERE userId = 14;`
+    // )
+    //     .then((res) => {
+    //         console.log(res);
+    //     })
+    //     .catch((e) => {
+    //         console.log(e);
+    //     }) // done
 
 
 

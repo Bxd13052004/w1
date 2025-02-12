@@ -32,11 +32,18 @@ api.get("/ping", (req, res) => {
 api.use("/auth", middleware.checkInforAccessToken)
 
 
-
 //auth_api
-api.post("/getCountOfWaiter", controler.getCountOfWaiter) // login haui sv
+api.post("/getCountOfWaiter", controler.getCountOfWaiter)
+
+api.post("/getCountOfSpamer", controler.getCountOfSpamer)
+
 
 api.post("/runningWaiter", controler.runningWaiter)
+api.post("/runningSpamer", controler.runningSpamer)
+
+api.get("/getListClass", controler.getListClass)
+
+
 
 
 
