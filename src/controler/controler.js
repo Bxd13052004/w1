@@ -208,6 +208,15 @@ class Controler {
     }
 
 
+
+
+
+
+
+
+
+
+
     async runningSpamer(req, res) {
         // console.log("hi");
 
